@@ -64,12 +64,41 @@ namespace HomolyaN_nevekszurese
                 
                 else if (valasz == "3")
                 {
+                    foreach (var nev in nevek)
+                    {
+                    bool jo = true;
+                        foreach (var betu in nevek)
+                        {
+                            if (!char.IsNumber(betu)) {
+                                jo = false;
+                            }
+                            if (jo)
+                            {
+                                Console.WriteLine(nev);
+                            }
+                        }
 
+                    }
                 }
                 else if (valasz == "4")
                 {
+                    foreach (var nev in nevek)
+                    {
+                        bool jo = true;
+                        foreach (char betu in nev)
+                        {
+                            if (!char.IsLetterOrDigit(betu) || betu != ' ') {
+                                jo = false;
+                            }
+                            if (jo)
+                            {
+                                Console.WriteLine(nev);
+                            }
+                        }
 
+                    }
                 }
+            
                 else if (valasz == "5")
                 {
 
