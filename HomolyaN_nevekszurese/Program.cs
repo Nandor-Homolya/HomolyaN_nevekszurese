@@ -36,7 +36,7 @@ namespace HomolyaN_nevekszurese
                 else if (valasz == "1")
                 {
                     Console.Clear();
-                    foreach (String nev in nevek)
+                    foreach (string nev in nevek)
                     {
                         Console.WriteLine(nev.TrimStart());
                        
@@ -44,8 +44,24 @@ namespace HomolyaN_nevekszurese
                 }
                 else if (valasz == "2")
                 {
-
+                    Console.Clear();
+                    foreach (string nev in nevek)
+                    {
+                        
+                        string[] darabok = nev.TrimStart().Split(' ');
+                        bool jo = true;
+                        foreach (string nevdarab in darabok) 
+                        {
+                            if (!char.IsUpper(nevdarab.TrimStart()[0]))
+                                jo = false;
+                        }
+                        if (jo)
+                        {
+                            Console.WriteLine(nev.TrimStart());
+                        }
+                    }
                 }
+                
                 else if (valasz == "3")
                 {
 
