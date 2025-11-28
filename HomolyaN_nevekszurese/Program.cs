@@ -35,7 +35,12 @@ namespace HomolyaN_nevekszurese
                 }
                 else if (valasz == "1")
                 {
-
+                    Console.Clear();
+                    foreach (String nev in nevek)
+                    {
+                        Console.WriteLine(nev.TrimStart());
+                       
+                    }
                 }
                 else if (valasz == "2")
                 {
